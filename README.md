@@ -1,6 +1,20 @@
 # データ収集フォーム＋解析アプリの例
 
-## 概要
+<!-- vscode-markdown-toc -->
+* 1. [概要](#)
+* 2. [準備](#-1)
+	* 2.1. [git](#git)
+	* 2.2. [Docker](#Docker)
+* 3. [実行方法](#-1)
+* 4. [作成手順](#-1)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
+##  1. <a name=''></a>概要
 
 データの収集と解析を行うウェブアプリの例である．
 
@@ -9,13 +23,15 @@
 1. 名前・身長・体重のデータを収集するためのフォーム
 1. (身長, 体重)の散布図と，それにフィットする直線を表示するウェブページ
 
+これは上記2要素を単一のウェブアプリで実行するデモである．解析手法が確定していればこういう方法もありえるが，データ収集と解析は別のアプリで行うのが一般的だろう（例：データ収集はGoogle Formで行い，解析はGoogle Colabで行う．）
+
 ![名前・身長・体重のデータを収集するためのフォーム](capture1.png)
 
 ![(身長, 体重)の散布図と，それにフィットする直線を表示するウェブページ](capture2.png)
 
-## 実行に必要なもの
+##  2. <a name='-1'></a>準備
 
-### git
+###  2.1. <a name='git'></a>git
 
 動作確認：次が実行できることを確認する．
 
@@ -23,7 +39,7 @@
 git clone https://github.com/taroyabuki/ex-data-sci-app.git
 ```
 
-### Docker
+###  2.2. <a name='Docker'></a>Docker
 
 動作確認：次が実行できることを確認する．
 
@@ -31,18 +47,19 @@ git clone https://github.com/taroyabuki/ex-data-sci-app.git
 docker run --rm curlimages/curl curl -s http://example.net
 ```
 
-## 実行方法
+##  3. <a name='-1'></a>実行方法
 
-gitの動作確認でリポジトリを取得した後で，次のコマンドを実行する．
+gitの動作確認でリポジトリを取得した後で，次のコマンドでアプリを起動する（終了はCtrl-c）．
+
 
 ```bash
 cd ex-data-sci-app
 docker-compose up
 ```
 
-Ctrl-cで終了する．
+ウェブブラウザで，http://localhost:5000/ にアクセスする．
 
-## 作成手順
+##  4. <a name='-1'></a>作成手順
 
 Claudeを使って作成した．
 
