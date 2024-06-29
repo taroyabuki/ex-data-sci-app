@@ -49,7 +49,7 @@ docker run --rm curlimages/curl curl -s http://example.net
 
 ##  3. <a name='-1'></a>実行方法
 
-gitの動作確認でリポジトリを取得した後で，次のコマンドでアプリを起動する（終了はCtrl-c）．
+gitの動作確認でリポジトリを取得した後で，次のコマンドでアプリを起動する．
 
 
 ```bash
@@ -58,6 +58,12 @@ docker-compose up
 ```
 
 ウェブブラウザで，http://localhost:5000/ にアクセスする．
+
+Ctrl-cで停止して，次のコマンドでコンテナを削除する．
+
+```bash
+docker-compose down
+```
 
 ##  4. <a name='-1'></a>作成手順
 
